@@ -1,4 +1,4 @@
-port firebase from 'firebase/app';
+import firebase from 'firebase/app';
 
 // import 'firebase/auth';
 import firestore from 'firebase/firestore';
