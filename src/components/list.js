@@ -57,7 +57,10 @@ class List extends React.Component {
 								{this.state.posts.map((post) => (
 									<tr>
 										<td>
-											<Link to={`/details/${post.key}`}>
+											<Link
+												key={post.key}
+												to={`/details/${post.key}`}
+											>
 												{post.title}
 											</Link>
 										</td>

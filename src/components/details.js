@@ -46,31 +46,28 @@ class Details extends Component {
 
   render() {
     return (
-      <div classNamess="container">
-        <div classNamess="panel panel-default">
-          <div classNamess="panel-heading">
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading">
             <h4>
               <Link to="/">Post List</Link>
             </h4>
-            <h3 classNamess="panel-title">{this.state.post.title}</h3>
+            <h3 className="panel-title">{this.state.post.title}</h3>
           </div>
-          <div classNamess="panel-body">
+          <div className="panel-body">
             <dl>
               <dt>Description:</dt>
               <dd>{this.state.post.description}</dd>
               <dt>Author:</dt>
               <dd>{this.state.post.author}</dd>
             </dl>
-            <Link
-              to={`/update/${this.state.key}`}
-              classNamess="btn btn-success"
-            >
+            <Link to={`/update/${this.state.key}`} className="btn btn-success">
               Edit
             </Link>
             &nbsp;
             <button
               onClick={this.delete.bind(this, this.state.key)}
-              classNamess="btn btn-danger"
+              className="btn btn-danger"
             >
               Delete
             </button>
